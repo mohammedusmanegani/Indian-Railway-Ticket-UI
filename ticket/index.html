@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ticket</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title"><h1>SOUTH WESTERN RAILWAYS</h1> </div>
+        <div class="title"><h3>RESERVATION/CANCELLATION REQUISITION FORM</h3></div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Train No : </td>
+                        <td>12345</td>
+                        <td>Date of Journey : </td>
+                        <td>11/11/11</td>
+                    </tr>
+                    <tr>
+                        <td>class : </td>
+                        <td>1</td>
+                        <td>No of Berth/Seat : </td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>Station From : </td>
+                        <td>BAY</td>
+                        <td>To : </td>
+                        <td>UBL</td>
+                    </tr>
+                    <tr>
+                        <td>Boarding at : </td>
+                        <td>BAY</td>
+                        <td>Reservation upto : </td>
+                        <td>UBL</td>
+                    </tr>
+                </thead>
+            </table>
+        </div> 
+        <div class="form-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sl <br> No</th>
+                            <th>Name in Block letter</th>
+                            <th>Sex <br> (M/F)</th>
+                            <th>Age</th>
+                            <th>Concession/ <br> Travel <br> Authority No.</th>
+                            <th>Choice if any </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                    CHILDREN BELOW 5 YEARS 
+            </div>
+            <div class="form-table1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sl <br> No</th>
+                                <th>Name in Block letter </th>
+                                <th>Sex <br> (M/F)</th>
+                                <th>Age</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="title"><h3>Onward / Return journey detail</h3></div>
+                <div class="form2">
+                    <div>Train No :  Date of journey : </div>
+                    <div>Class : Station From : Full Address :</div>
+                </div>
+
+                <div class="cancel">
+                    <button onclick="myFunction()">Cancel Ticket</button>
+                </div>
+
+                <p id="demo" class="demo"></p>
+                
+    </div>
+
+    <script>
+        function myFunction() {
+          var txt;
+          if (confirm("Do you Want to cancel your ticket...")) {
+            txt = "Your ticket Cancelled";
+          } else {
+            txt = "Your ticket Not Cancelled";
+          }
+          document.getElementById("demo").innerHTML = txt;
+        }
+        </script>
+</body>
+</html>

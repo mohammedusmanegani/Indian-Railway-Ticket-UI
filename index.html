@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Book Ticket</title>
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body>
+      <form action="" method="POST">
+    <div class="container">
+       <div class="title"><h1>SOUTH WESTERN RAILWAYS</h1> </div>
+       <div class="title"><h3>RESERVATION/CANCELLATION REQUISITION FORM</h3></div>
+       <div class="medical">
+           <div class="medical-text">
+               If you are a Medical Practitioner Please tick ( ) in Box <br> (You could be of help in an emergency)
+           </div>
+           <div class="medical-box">
+                <input type="checkbox" required>Yes
+                <input type="checkbox" required>No
+           </div>
+       </div>
+       <div class="medical1">
+            <div class="medical-text">
+                If you want Senior Citizen Concession,Please tick( ) in box <br> (if yes, please carry a proof of age during the journey to avoid <br>
+                inconvenience of penal charging under extent railway rules)
+            </div>
+            <div class="medical-box">
+                 <input type="checkbox" value="2" required>Yes
+                 <input type="checkbox" value="2" required>No
+            </div>
+        </div>
+        <div class="form1">
+            <div>Train No <input type="text" required>Date of journey <input type="text" required></div>
+            <div>Class <input type="text" required> No of Berth/Seat <input type="text" required></div>
+            <div>Station From <input type="text" required> To <input type="text" required></div>
+            <div>Boarding at <input type="text" required> Reservation upto <input type="text" required></div>
+        </div>
+        <div class="form-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sl <br> No</th>
+                        <th>Name in Block letter</th>
+                        <th>Sex <br> (M/F)</th>
+                        <th>Age</th>
+                        <th>Concession/ <br> Travel <br> Authority No.</th>
+                        <th>Choice if any </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><input type="text" required></td>
+                        <td><input type="text" required></td>
+                        <td><input type="text" required></td>
+                        <td><input type="text" required></td>
+                        <td><input type="text" required></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+                CHILDREN BELOW 5 YEARS (FOR WHOM TICKET IS NOT TO BE ISSUED)
+        </div>
+
+        <div class="form-table1">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sl <br> No</th>
+                            <th>Name in Block letter </th>
+                            <th>Sex <br> (M/F)</th>
+                            <th>Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="title"><h3>Onward / Return journey detail</h3></div>
+            <div class="form2">
+                <div>Train No & Name <input type="text">Date of journey <input type="text"></div>
+                <div>Class <input type="text"> Station From <input type="text"> Full Address <input type="text"></div>
+            </div>
+            <div class="button-submit">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+</form>
+<script type="text/javascript">
+    //Near checkboxes
+   $('#checkbox').click(function() {
+       $(this).siblings('input:checkbox').prop('checked', false);
+   });
+ </script>
+  </body>
+</html>
